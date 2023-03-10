@@ -19,7 +19,7 @@ function App() {
 
           <Route index element={<Welcome />} />
 
-          <Route path='spaces' >
+          <Route path='space' >
             <Route index element={<SpaceList />} />
           </Route>
 
