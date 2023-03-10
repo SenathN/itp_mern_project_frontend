@@ -1,0 +1,132 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+:root {
+  --theme-color-light1 : #c2edf6 ;
+  --theme-color-light-major : white ;
+  --theme-color-dark1 : #08b4b0 ;
+  --theme-color-dark2 : #003cbd ;
+  --theme-color-compliment : #f263b2 ;
+
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica',
+    sans-serif;
+}
+
+p {
+  text-align: justify;
+}
+
+img {
+  margin: 15px;
+}
+
+#header {
+  background-image: linear-gradient( var(--theme-color-light-major), var(--theme-color-light1) );
+  color: black ;
+  min-height: 250px;
+}
+
+.navigation_btns {
+  margin: 20px ;
+  padding : 20px ;
+  border-radius: 10px;
+  border: none;
+  background-color: #00000000;
+  transition-property: 'background-color' ;
+  transition-duration: .2s;
+  font-size: medium;
+  margin: 0px 20px;
+  font-weight: bold;
+}
+
+.navigation_btns:hover {
+  color: var(--theme-color-dark2);
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width:100%;
+}
+
+#public__content_div {
+  padding :0px 20px;
+  display:flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  max-width: 1200px;
+  min-width: 1000px;
+  margin-top: 10px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.UI_buttons
+{
+  font-size: medium;
+  font-weight: bold;
+  border: 2px solid var(--theme-color-light1);
+  border-radius: 15px;
+  height: 48px ;
+  width: 96px ;
+  margin: 10px;
+  background-color: white;
+  color: black ;
+}
+
+.UI_buttons:hover
+{
+  height: 48px ;
+  width: 96px ;
+  margin: 10px;
+  color: white;
+  background-color: var(--theme-color-dark1) ;
+  transition-property: "background-color color";
+  transition-duration: .3s;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--theme-color);
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  transition-property: "background-color color";
+  transition-duration: .3s;
+  background-color: var(--theme-color)
+}
+
+li a:hover {
+  transition-property: "background-color color";
+  transition-duration: .3s;
+  background-color: var(--theme-color-dark1);
+  color: white;
+}
+
+
+#footer{
+  margin : 0px;
+  background-image: linear-gradient( var(--theme-color-light1), var(--theme-color-light-major) );
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-items: flex-end;
+}
