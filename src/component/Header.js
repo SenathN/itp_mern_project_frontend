@@ -7,7 +7,7 @@ const Header = () => {
             <div id='header_top'>
                 <Link to='/' >
                     <div id='header__titleDiv'>
-                        <img id="title_img" src='word_logo.png' alt='Profile'/>
+                        <img id="title_img" src='./word_logo.png' alt='Profile'/>
                     </div>
                 </Link>
                 <div id='header__accDiv'>
@@ -16,7 +16,7 @@ const Header = () => {
                         <Link to='/login' style={{ textDecoration: 'none' }} >
                             <div id='log_holder'>
                                 Sign in
-                                <img id="log_btn_img" src='icons8-user-96.png' alt='Profile' />
+                                <img id="log_btn_img" src='./icons8-user-96.png' alt='Profile' />
                             </div>
                         </Link>
                     </div>
