@@ -1,17 +1,15 @@
 const Footer = () => {
     return (
-        <footer id="footer" style={{ display: 'flex', justifyContent: 'space-between' }} >
-            <div><img src="logo.png" width="70px" style={{ 'margin-top': '40px' }} alt="Odyssey Logo" /> </div>
-            <div style={{ 'padding': '20px', display: 'flex', 'justify-content': 'space-between', 'flex-direction': 'column' }}>
-                <div></div>
-                <div>
-                    <h5>Copyright © 2023 | All Rights Reserved</h5>
-                </div>
+        <footer id="footer" >
+            <div>
+                <p style={{ 'text-align': 'left', }}>
+                    Copyright © 2023 | All Rights Reserved
+                </p>
             </div>
-            <div style={{ 'padding': '20px' }}>
-                <p style={{ 'text-align': 'right', fontSize: 'small' }} >
+            <div>
+                <p style={{ 'text-align': 'right', }} >
                     Odyssey<br />
-                    Your Holiday Vacation Companion
+                    Your Holiday Companion
                 </p>
             </div>
         </footer>

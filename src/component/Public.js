@@ -5,7 +5,7 @@ const Public = () => {
     return (
         <>
             {/* content */}
-            <div style={{ 'display': 'flex', 'justify-content': 'space-between', marginBottom: '20px' }}>
+            <div>
                 <div>
                     <img src="./imgs/img (1).webp" width="400em" style={{ 'margin': '16px 20px' }} alt='resort' />
                     <p style={{ 'text-align': 'center', fontSize: 'small' }} >
@@ -35,13 +35,13 @@ const Public = () => {
                 backgroundColor: 'var(--theme-color)',
                 backgroundImage: 'url("./imgs/img (10).jpg")',
                 color: 'white',
-                height: '300px',
+                height: '18em',
                 textAlign: 'left',
                 padding: '30px'
             }}>
                 <h2>We offer many services;<br />from your flights to <br />your accomodations,  <br />worldwide.</h2>
             </div>
-            <PhotoGallery />
+            {/* <PhotoGallery /> */}
             {/* content */}
         </>
     )

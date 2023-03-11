@@ -7,15 +7,9 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <section className="public">
-        <main>
-          <div style={{ display: 'flex', 'flex-direction': 'row', 'justify-content': 'space-around' }}>
-            <div id='public__content_div' >
-              <Outlet />
-            </div>
-          </div>
-        </main>
-      </section >
+      <main id='main_content'>
+        <Outlet />
+      </main>
       <Footer />
     </>
   )
