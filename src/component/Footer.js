@@ -3,7 +3,7 @@ const Footer = () => {
         <footer id="footer" >
             <div>
                 <p style={{ 'text-align': 'left', }}>
-                    Copyright © 2023 | All Rights Reserved
+                    Copyright © 2023 <br/> All Rights Reserved
                 </p>
             </div>
             <div>
