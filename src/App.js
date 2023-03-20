@@ -6,7 +6,7 @@ import DashLayout from './component/DashLayout';
 import Welcome from './features/auth/Welcome';
 import SpaceList from './features/spaces/SpaceList';
 import SignUp from './features/auth/SignUp';
-import SpaceProviderList from './features/space_providers/SpaceProviderList';
+import SpaceProviderList from './features/spaceProviders/SpaceProvidersList';
 
 function App() {
   return (
