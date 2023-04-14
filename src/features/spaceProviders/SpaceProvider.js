@@ -10,7 +10,7 @@ const SpaceProvider = ({ spaceProviderId }) => {
         const handleEdit = () => { navigator(`dash/space-provider/d${spaceProviderId}`) }
 
         return (
-            <tr className={` ${spaceProvider.profile_status ? 'table-primary' : 'table-primary'}`}>
+            <tr className={` ${spaceProvider.profile_status ? 'table-primary' : 'table-danger'}`}>
                 <td>
                     {spaceProvider.username}
                 </td>
