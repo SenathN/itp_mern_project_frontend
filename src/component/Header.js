@@ -1,33 +1,36 @@
 import { Link } from 'react-router-dom'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Header = () => {
     return (
-        <header id='header'>
-            <Link to='/' >
-                <div id='header__titleDiv'>
-                    <img id="title_img" src='./word_logo.png' alt='Profile' />
+        <header className='flex-item justify-content-between container-fluid jumbotron border-bottom border-3'>
+            <div className='row text-center'>
+                <div className='flex-item align-self-center col-sm-2 justify-content-center'>
+                    <Link to='/'>
+                        <img id="title_img" src='./word_logo.png' alt='logo' className='img-fluid'
+                            style={{ maxHeight: '8rem', minHeight: '48px' }}
+                        />
+                    </Link>
                 </div>
-            </Link>
-            <div id='header__accDiv'>
-                <p style={{ textAlign: 'justify', margin: '1em' }}>Start your adventure.</p>
-                <Link to='/login' style={{ textDecoration: 'none' }} >
-                    <div id='log_holder'>
-                        <p>
-                            Sign in
-                             <img id="log_btn_img" src='./icons8-user-96.png' alt='Profile' />
-                        </p>
+                <div className='flex-item align-self-center col-sm-8'>
+                    <div id='navbar__div' className='list-inline navbar navbar-default '
+                        style={{ maxWidth: '45rem' }}
+                    >
+                        <Link className='list-inline-item btn'>Destinations</Link>
+                        <Link className='list-inline-item btn'>Home</Link>
+                        <Link className='list-inline-item btn'>Gallery</Link>
+                        <Link className='list-inline-item btn'>Experiences</Link>
+                        <Link className='list-inline-item btn'>Reviews</Link>
+                        <Link className='list-inline-item btn'>About us</Link>
                     </div>
-                </Link>
+                </div>
+                <div className='flex-item align-self-center col-sm-2' style={{ minWidth: '80px' }}>
+                    <Link to='/auth' className='btn btn-sm text-center '>
+                        Sign in
+                        <img src='./icons8-user-96.png' alt='Profile' className='img-fluid' style={{ width: '48px' }} />
+                    </Link>
+                </div>
             </div>
-            <nav id='navigation_bar'>
-                <Link><button className="navigation_btns">Destinations</button></Link>
-                <Link to='/'><button className="navigation_btns">Home</button></Link>
-                <Link><button className="navigation_btns">Gallery</button></Link>
-                <Link><button className="navigation_btns">Experiences</button></Link>
-                <Link><button className="navigation_btns">Reviews</button></Link>
-                <Link><button className="navigation_btns">About us</button></Link>
-            </nav>
         </header >
     )
 }

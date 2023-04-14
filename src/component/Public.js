@@ -1,18 +1,11 @@
 import React from 'react'
-import PhotoGallery from "./PhotoGallery";
 
 const Public = () => {
     return (
         <>
-            {/* content */}
-            <div>
-                <img src="./imgs/img (1).webp" style={{ 'text-align': 'center' }} alt='resort' />
-                <p style={{ 'text-align': 'center', fontSize: 'small' }} >
-                    location 1
-                </p>
-            </div>
-            <div style={{ 'min-width': '10em' }}>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dui pellentesque, elementum eros
+            <div className='container text-justify'>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel dui pellentesque, elementum eros
                     sit amet, rutrum mauris. Nunc ornare nulla non mauris pharetra ornare. Mauris at est ac sem commodo
                     efficitur. Nullam imperdiet magna non commodo ullamcorper. Curabitur maximus orci iaculis massa
                     interdum varius. Maecenas non nisl tortor. Sed vel ornare erat.
@@ -28,16 +21,15 @@ const Public = () => {
                     elit ex, cursus et venenatis sit amet, varius luctus erat. Pellentesque nec velit et metus rhoncus
                     tempus. Duis faucibus pulvinar est, id accumsan risus fringilla id.
                 </p>
+                <div>
+                    <img src="./imgs/img (1).webp" className='img-fluid d-block mx-auto' alt='resort' />
+                </div>
             </div>
-            <div style={{
-                backgroundColor: 'var(--theme-color)',
-                backgroundImage: 'url("./imgs/img (10).jpg")',
-                color: 'white',
-                height: '18em',
-                textAlign: 'left',
-                padding: '30px'
-            }}>
-                <h2>We offer many services;<br />from your flights to <br />your accomodations,  <br />worldwide.</h2>
+            
+            <div className='jumbotron jumbotron-fluid bg-success mt-3'>
+                <div className='container'>
+                    <p className='display-1 p-3 text-light'>We offer many services; from your flights to your accomodations, worldwide.</p>
+                </div>
             </div>
             {/* <PhotoGallery /> */}
             {/* content */}
